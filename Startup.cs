@@ -64,8 +64,8 @@ namespace WebApiDapperCore
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Tedu Rest API Dapper ", Version = "v1" });
             });
 
-            services.AddScoped<IProductService, ProductService>();
-            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IProductService, ProductService>(); //Dependency Injection
+            services.AddScoped<IUserService, UserService>(); //Dependency Injection
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
